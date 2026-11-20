@@ -1,0 +1,6 @@
+.profile-menu { display: flex; align-items: center; gap: 11px; }
+.profile-chip { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.profile-chip span { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: var(--acid); color: var(--ink); font-size: 10px; font-family: 'DM Mono', monospace; font-weight: 700; }
+.profile-signout { border: 0; background: transparent; color: #696860; font-size: 12px; padding: 0; }
+.profile-signout:hover { color: var(--orange); }
+@media (max-width: 780px) { .profile-menu { display: none; } }

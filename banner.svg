@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500;700&amp;family=DM+Sans:wght@500;700;800;900&amp;display=swap');
+      
+      .brand-name { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 900; letter-spacing: -2.5px; }
+      .tag-mono { font-family: 'DM Mono', monospace; letter-spacing: 0.14em; }
+      .desc-sans { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    </style>
+
+    <!-- Deep Forest Green Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1e16" />
+      <stop offset="50%" stop-color="#112b20" />
+      <stop offset="100%" stop-color="#0a1912" />
+    </linearGradient>
+
+    <!-- Subtle Radial Glows -->
+    <radialGradient id="lime-radial" cx="85%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#d8fa57" stop-opacity="0.16" />
+      <stop offset="70%" stop-color="#112b20" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="coral-radial" cx="15%" cy="80%" r="45%">
+      <stop offset="0%" stop-color="#e65c36" stop-opacity="0.16" />
+      <stop offset="70%" stop-color="#112b20" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="280" rx="16" fill="url(#bg)" />
+  <rect width="1200" height="280" rx="16" fill="url(#lime-radial)" />
+  <rect width="1200" height="280" rx="16" fill="url(#coral-radial)" />
+
+  <!-- Subtle Border -->
+  <rect x="1" y="1" width="1198" height="278" rx="15" fill="none" stroke="#25553e" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Centered Simple Content -->
+  <g transform="translate(600, 140)" text-anchor="middle">
+    
+    <!-- Eyebrow Badge -->
+    <g transform="translate(0, -68)">
+      <rect x="-140" y="-13" width="280" height="26" rx="13" fill="#1b4333" stroke="#2f684f" stroke-width="1" />
+      <circle cx="-120" cy="0" r="4" fill="#d8fa57" />
+      <text x="-108" y="4" fill="#d8fa57" class="tag-mono" font-size="10" font-weight="700" text-anchor="start">CAMPUS EVENT PLATFORM</text>
+      <circle cx="120" cy="0" r="4" fill="#e65c36" />
+    </g>
+
+    <!-- Main Logo + Name Group -->
+    <g transform="translate(0, -2)">
+      <!-- Logo Square and Wordmark centered together -->
+      <g transform="translate(-180, -28)">
+        <!-- Logo Icon Box -->
+        <rect x="0" y="0" width="56" height="56" rx="15" fill="#1b4333" stroke="#2f684f" stroke-width="1.5" />
+        <!-- 3 Ascending Signal Bars -->
+        <rect x="12" y="31" width="7" height="15" rx="3.5" fill="#d8fa57" />
+        <rect x="24" y="19" width="7" height="27" rx="3.5" fill="#d8fa57" />
+        <rect x="36" y="24" width="7" height="22" rx="3.5" fill="#e65c36" />
+
+        <!-- Brand Name -->
+        <text x="74" y="46" fill="#ffffff" class="brand-name" font-size="60" text-anchor="start">
+          Campus<tspan fill="#d8fa57">IQ</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Clear, Simple Tagline -->
+    <text x="0" y="58" fill="#e2eae4" class="desc-sans" font-size="16.5" font-weight="600" letter-spacing="-0.2px">
+      AI-Powered Campus Event Intelligence &amp; Management
+    </text>
+
+    <!-- Minimal Category Dots -->
+    <g transform="translate(0, 90)">
+      <text fill="#a3b8ad" class="desc-sans" font-size="13" font-weight="500">
+        Student Discovery <tspan fill="#d8fa57">•</tspan> Discussion Forums <tspan fill="#d8fa57">•</tspan> Real-Time Capacity <tspan fill="#d8fa57">•</tspan> Omni-Search
+      </text>
+    </g>
+
+  </g>
+</svg>

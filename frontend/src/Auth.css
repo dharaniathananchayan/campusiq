@@ -1,0 +1,12 @@
+.auth-form select {
+  border: 1px solid #d7d5cf;
+  border-radius: 7px;
+  padding: 13px;
+  outline-color: var(--orange);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  background: white;
+}
+
+.button:disabled { opacity: .65; cursor: not-allowed; transform: none; box-shadow: none; }
+.form-error { margin: 0; padding: 10px 12px; border-radius: 7px; background: #fff0eb; color: #a32f17; font-size: 12px; line-height: 1.4; }

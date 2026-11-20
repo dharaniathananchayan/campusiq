@@ -1,0 +1,24 @@
+services:
+  # Backend API Service (Free Tier)
+  - type: web
+    name: campusiq-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:///./campusiq.db
+      - key: DATABASE_URL_SYNC
+        value: sqlite:///./campusiq.db
+      - key: CORS_ORIGINS
+        value: '["*"]'
+      - key: GROQ_API_KEY
+        sync: false
